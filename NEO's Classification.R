@@ -270,9 +270,9 @@ pred_glm_compl_step = predict(glm_compl_step, test, type = "response")
 
 # Converting the predictions in {0,1} according to the chosen threshold:
 
-pred_glm_compl_step_04 = ifelse(pred_glm_compl_step > threshold4, 1, 0)
-pred_glm_compl_step_05 = ifelse(pred_glm_compl_step > threshold5, 1, 0)
-pred_glm_compl_step_06 = ifelse(pred_glm_compl_step > threshold6, 1, 0)
+pred_glm_compl_step_04<- ifelse(pred_glm_compl_step > threshold4, 1, 0)
+pred_glm_compl_step_05<- ifelse(pred_glm_compl_step > threshold5, 1, 0)
+pred_glm_compl_step_06<- ifelse(pred_glm_compl_step > threshold6, 1, 0)
 
 # Confusion matrix with different thresholds
 
@@ -426,9 +426,9 @@ pred_glm_bal_step<- predict(glm_bal_step, test, type = "response")
 
 # Converting the predictions in {0,1} according to the chosen threshold:
 
-pred_glm_bal_step_04 = ifelse(pred_glm_bal_step > threshold4, 1, 0)
-pred_glm_bal_step_05 = ifelse(pred_glm_bal_step > threshold5, 1, 0)
-pred_glm_bal_step_06 = ifelse(pred_glm_bal_step > threshold6, 1, 0)
+pred_glm_bal_step_04<- ifelse(pred_glm_bal_step > threshold4, 1, 0)
+pred_glm_bal_step_05<- ifelse(pred_glm_bal_step > threshold5, 1, 0)
+pred_glm_bal_step_06<- ifelse(pred_glm_bal_step > threshold6, 1, 0)
 
 # Confusion matrix with different thresholds
 
